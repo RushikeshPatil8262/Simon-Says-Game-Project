@@ -8,7 +8,7 @@
 
  let h2 = document.querySelector("h2");
 
- document.addEventListener("keyup", function () {
+ document.addEventListener("keypress", function () {
    if (started == false) {
       console.log("game is started");
       started = true; 
@@ -40,10 +40,10 @@
     let randColor = btns[randIdx];
     let randBtn = document.querySelector(`.${randColor}`);
     gameSeq.push(randColor);
-    console.log(gameSeq);
-    // console.log(randIdx);
-    // console.log(randColor);
-    // console,log(randBtn);
+    //console.log(gameSeq);
+    //console.log(randIdx);
+    //console.log(randColor);
+    //console.log(randBtn);
     gameFlash(randBtn);
  }
 
